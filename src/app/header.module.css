@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: transparent;
+  width: 100vw;
+  height: 4rem;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  z-index: 999;
+}
+
+.icon {
+  position: relative;
+  width: 8.375rem;
+  height: 2.25rem;
+}
+
+.signIn {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 18px;
+}
