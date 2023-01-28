@@ -1,11 +1,19 @@
 .image {
   position: relative;
   width: 380px;
-  height: 304px;
+  aspect-ratio: 5 / 4;
 }
 
 .downloadImage {
   position: relative;
   width: 380px;
-  height: 304px;
+  aspect-ratio: 5 / 4;
+}
+
+@media screen and (max-width: 950px) {
+  .image,
+  .downloadImage {
+    width: 100%;
+    max-width: 580px;
+  }
 }

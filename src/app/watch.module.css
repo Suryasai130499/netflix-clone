@@ -5,7 +5,7 @@
 .tvImage {
   position: relative;
   width: 380px;
-  height: 304px;
+  aspect-ratio: 5 / 4;
   z-index: 1;
 }
 
@@ -16,4 +16,22 @@
   width: 236px;
   height: 155px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+  .image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tvImage {
+    width: min(550px, 100%);
+  }
+
+  .video {
+    width: 57%;
+    height: 49%;
+    top: 8.5%;
+    left: 17.5%;
+  }
 }

@@ -1,13 +1,13 @@
 .image {
   position: relative;
   width: 380px;
-  height: 304px;
+  aspect-ratio: 5 / 4;
 }
 
 .downloadImage {
   position: relative;
   width: 380px;
-  height: 304px;
+  aspect-ratio: 5 / 4;
 }
 
 .section {
@@ -51,4 +51,12 @@
 .gif > img {
   width: 48px;
   height: 48px;
+}
+
+@media screen and (max-width: 950px) {
+  .image,
+  .downloadImage {
+    width: 100%;
+    max-width: 580px;
+  }
 }

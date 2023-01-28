@@ -15,6 +15,7 @@ const TV = () => {
         className={styles.video}
         autoPlay
         muted
+        loop
         playsInline
       >
         <source src="/videos/tv.m4v" />

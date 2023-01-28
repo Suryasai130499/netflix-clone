@@ -16,6 +16,7 @@ const Watch = () => {
         autoPlay
         muted
         playsInline
+        loop
       >
         <source src="/videos/video-devices-in.m4v" />
       </video>
