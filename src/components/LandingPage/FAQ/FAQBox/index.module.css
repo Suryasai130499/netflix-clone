@@ -1,0 +1,46 @@
+.main {
+  width: 100%;
+}
+
+.titleButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.3em;
+  padding-inline: 1.2em 2.2em;
+  background-color: #303030;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 400;
+}
+
+.cross {
+  position: relative;
+  top: 3px;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s linear;
+  transform: rotate(45deg);
+}
+
+.cross.rotate {
+  transform: rotate(0);
+}
+
+.content {
+  margin-top: 1px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5em;
+  padding: 1.2em;
+  background-color: #303030;
+}
+
+.content.open {
+  display: flex;
+}

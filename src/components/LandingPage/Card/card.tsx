@@ -1,9 +1,9 @@
 import { ReactElement } from 'react';
 import styles from './card.module.css';
-import TV from './tv';
-import Download from './download';
-import Watch from './watch';
-import Kids from './kids';
+import TV from '../TV/tv';
+import Download from '../Download/download';
+import Watch from '../Watch/watch';
+import Kids from '../Kids/kids';
 
 interface PropsType {
   heading: string;
