@@ -1,27 +1,32 @@
 .header {
-  position: fixed;
+  position: absolute;
   left: 0;
+  right: 0;
   top: 0;
   background: transparent;
-  width: 100vw;
   height: 4rem;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 20px;
+  padding-inline: 10px;
   z-index: 999;
 }
 
 .icon {
   position: relative;
-  width: 8.375rem;
-  height: 2.25rem;
+  /* width: 8.375rem;
+  height: 2.25rem; */
+  width: 30%;
+  height: 24px;
 }
 
 .signIn {
   background-color: #e50914;
   color: #fff;
-  font-size: 1rem;
-  padding: 8px 18px;
+  font-weight: 300;
+  /* font-size: 1rem; */
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  /* padding: 8px 18px; */
 }
