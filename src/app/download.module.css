@@ -1,0 +1,54 @@
+.image {
+  position: relative;
+  width: 380px;
+  height: 304px;
+}
+
+.downloadImage {
+  position: relative;
+  width: 380px;
+  height: 304px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 80%;
+  margin-inline: 10%;
+  height: 80px;
+  bottom: 35px;
+  background: #000;
+  padding-inline: 10px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+.firstSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thumbnail {
+  position: relative;
+  width: 48px;
+  height: 72px;
+}
+
+.name > h3 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.name > p {
+  font-size: 0.9em;
+  color: #0071eb;
+}
+
+.gif,
+.gif > img {
+  width: 48px;
+  height: 48px;
+}

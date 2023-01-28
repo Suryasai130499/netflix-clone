@@ -1,28 +1,29 @@
-import { ReactElement } from "react";
-import styles from "./card.module.css";
-import TV from "./tv";
-import Download from "./download";
-import Watch from "./watch";
-import Kids from "./kids";
+import { ReactElement } from 'react';
+import styles from './card.module.css';
+import TV from './tv';
+import Download from './download';
+import Watch from './watch';
+import Kids from './kids';
 
 interface PropsType {
   heading: string;
   description: string;
   type: string;
+  reverse?: boolean;
 }
 
 const Card = (props: PropsType) => {
-  const { heading, description, type } = props;
+  const { heading, description, type, reverse } = props;
 
   const getElement = (): ReactElement => {
     switch (type) {
-      case "tv":
+      case 'tv':
         return <TV />;
-      case "download":
+      case 'download':
         return <Download />;
-      case "watch":
+      case 'watch':
         return <Watch />;
-      case "kids":
+      case 'kids':
         return <Kids />;
       default:
         return <></>;
@@ -31,9 +32,18 @@ const Card = (props: PropsType) => {
 
   return (
     <div className={styles.card}>
-      <h2 className={styles.heading}>{heading}</h2>
-      <p className={styles.description}>{description}</p>
-      {}
+      <div
+        style={{
+          flexDirection: reverse ? 'row-reverse' : 'row',
+        }}
+        className={styles.cardWrapper}
+      >
+        <div className={styles.cardText}>
+          <h2 className={styles.heading}>{heading}</h2>
+          <p className={styles.description}>{description}</p>
+        </div>
+        {getElement()}
+      </div>
     </div>
   );
 };

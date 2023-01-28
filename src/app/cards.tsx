@@ -1,5 +1,5 @@
-import styles from "./cards.module.css";
-import Card from "./card";
+import styles from './cards.module.css';
+import Card from './card';
 
 const Cards = () => {
   return (
@@ -13,6 +13,7 @@ const Cards = () => {
         heading="Download your shows to watch offline."
         description="Save your favourites easily and always have something to watch."
         type="download"
+        reverse={true}
       />
       <Card
         heading="Watch everywhere."
@@ -23,6 +24,7 @@ const Cards = () => {
         heading="Create profiles for children."
         description="Send children on adventures with their favourite characters in a space made just for them—free with your membership."
         type="kids"
+        reverse={true}
       />
     </div>
   );

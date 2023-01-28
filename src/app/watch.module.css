@@ -1,0 +1,19 @@
+.image {
+  position: relative;
+}
+
+.tvImage {
+  position: relative;
+  width: 380px;
+  height: 304px;
+  z-index: 1;
+}
+
+.video {
+  position: absolute;
+  top: 25px;
+  left: 70px;
+  width: 236px;
+  height: 155px;
+  object-fit: cover;
+}
