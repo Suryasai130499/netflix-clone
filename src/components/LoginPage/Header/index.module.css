@@ -1,0 +1,12 @@
+.header {
+  position: relative;
+  padding: 1rem 2rem;
+  z-index: 3;
+}
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  height: 2.8125rem;
+  width: 10.4375rem;
+}

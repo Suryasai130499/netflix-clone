@@ -1,0 +1,88 @@
+.wrapper {
+  width: min-content;
+  margin-top: 10rem;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(0 0 0 / 0.5);
+  padding: 3rem 3.5rem 10rem;
+  z-index: 4;
+  border-radius: 0.5em;
+}
+
+.wrapper input {
+  border: none;
+  outline: none;
+  width: 300px;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.35em;
+}
+
+.wrapper input::placeholder {
+  color: #888;
+}
+
+.wrapper button {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  padding-block: 1rem;
+  background: #e50914;
+  color: #fff;
+  border-radius: 0.35em;
+}
+
+.help {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+}
+
+.checkbox {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: max-content;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.checkbox label {
+  cursor: pointer;
+}
+
+.needHelp {
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.new {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.new > a {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.new > a:hover {
+  text-decoration: underline;
+}

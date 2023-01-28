@@ -1,0 +1,44 @@
+.footer {
+  color: #737373;
+  width: 100%;
+  padding-inline: 15%;
+  padding-block: 3rem;
+}
+
+.topWord {
+  font-size: 1rem;
+}
+
+.number {
+  cursor: pointer;
+}
+
+.number:hover {
+  text-decoration: underline;
+}
+
+.list {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.sublist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.listItem {
+  cursor: pointer;
+}
+
+.listItem:hover {
+  text-decoration: underline;
+}
+
+.bottomWord {
+  margin-top: 2rem;
+  font-size: 13px;
+}

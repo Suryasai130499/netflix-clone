@@ -1,5 +1,7 @@
-import Image from 'next/image';
-import styles from './form.module.css';
+import Image from "next/image";
+import Register from "../Register";
+
+import styles from "./form.module.css";
 
 const SignInForm = () => {
   return (
@@ -10,7 +12,7 @@ const SignInForm = () => {
           alt="Background"
           fill
           style={{
-            objectFit: 'cover',
+            objectFit: "cover",
           }}
         />
       </div>
@@ -19,28 +21,7 @@ const SignInForm = () => {
       <div className={styles.textSection}>
         <h1>Ultimate movies, TV shows and more.</h1>
         <h2>Watch anywhere. Cancel anytime.</h2>
-        <h3>
-          Ready to watch? Enter your email to create or restart your membership.
-        </h3>
-        <div className={styles.emailForm}>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className={styles.emailfield}
-            placeholder={'Email address'}
-          />
-          <button className={styles.submit}>
-            Get Started{' '}
-            <span className={styles.arrow}>
-              <Image
-                src="/images/right.svg"
-                alt=">"
-                fill
-              />
-            </span>
-          </button>
-        </div>
+        <Register />
       </div>
     </div>
   );

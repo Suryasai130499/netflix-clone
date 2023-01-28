@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./header.module.css";
 
 const Header = () => {
@@ -7,7 +8,9 @@ const Header = () => {
       <div className={styles.icon}>
         <Image src="/images/logo.svg" alt="LOGO" className={styles.icon} fill />
       </div>
-      <button className={styles.signIn}>Sign In</button>
+      <Link href="/login">
+        <button className={styles.signIn}>Sign In</button>
+      </Link>
     </div>
   );
 };

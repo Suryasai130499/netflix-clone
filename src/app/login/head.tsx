@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Netflix - Watch TV Shows Online - Watch Movies Online</title>
+      <title>Netflix</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
