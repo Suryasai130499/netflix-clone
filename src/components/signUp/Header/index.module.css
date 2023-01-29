@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0 0 0 / 0.1);
+}
+
+.logo {
+  position: relative;
+  width: 167px;
+  height: 45px;
+}
+
+.login {
+  font-size: 1.25rem;
+  font-weight: 500;
+}

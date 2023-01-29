@@ -1,0 +1,55 @@
+.wrapper {
+  margin: 10rem auto;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.devices {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 25 / 6;
+}
+
+.stepInfo {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.setup {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0em;
+  line-height: 1.5;
+}
+
+.nextButton {
+  width: 100%;
+  color: #fff;
+  background-color: #e50914;
+  font-size: 24px;
+  border-radius: 4px;
+  padding-block: 1.5rem;
+  text-align: center;
+}
