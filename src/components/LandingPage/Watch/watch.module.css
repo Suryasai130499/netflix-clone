@@ -18,7 +18,13 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 700px) {
+  .video {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 701px) {
   .image {
     width: 100%;
     max-width: 100%;
@@ -30,9 +36,10 @@
   }
 
   .video {
-    width: 50%;
+    width: 60%;
+    max-width: 330px;
     height: 49%;
     top: 8.5%;
-    left: 26%;
+    left: clamp(7.81rem, calc(-14.06rem + 50vw), 15.63rem);
   }
 }
