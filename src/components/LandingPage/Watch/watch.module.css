@@ -26,12 +26,13 @@
 
   .tvImage {
     width: min(550px, 100%);
+    margin-inline: auto;
   }
 
   .video {
-    width: 57%;
+    width: 50%;
     height: 49%;
     top: 8.5%;
-    left: 17.5%;
+    left: 26%;
   }
 }
