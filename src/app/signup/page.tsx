@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { useAppDispatch } from '@/redux/hooks';
 
 import styles from './page.module.css';
 

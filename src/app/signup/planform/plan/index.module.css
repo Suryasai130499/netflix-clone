@@ -1,0 +1,85 @@
+.planWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
+}
+
+.planWrapper.active {
+  color: #e50914;
+}
+
+.planWrapper > * {
+  width: 100%;
+  text-align: center;
+  padding-block: calc(2rem);
+  border-bottom: 1px solid #ccc;
+}
+
+.planWrapper > *:last-child {
+  border-bottom: none;
+}
+
+.planSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background-color: #e50914;
+  color: #fff;
+  opacity: 0.6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.planSection.planSection.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  border-color: transparent;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px;
+  border-top-color: #e50914;
+  translate: -50%;
+}
+
+.planSection:hover {
+  opacity: 1;
+}
+
+.planSection.active {
+  opacity: 1;
+}
+
+.planName {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.devicesWrap {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.device {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.planWrapper.active .device img {
+  fill: #e50914;
+}
