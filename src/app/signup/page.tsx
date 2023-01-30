@@ -1,9 +1,13 @@
-import React from 'react';
+'use client';
+
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 import styles from './page.module.css';
 
 const Registration = () => {
+  const router = useRouter();
+
   const policies = [
     'No commitments, cancel anytime.',
     'Everything on Netflix for one low price.',
@@ -42,6 +46,7 @@ const Registration = () => {
         ))}
       </div>
       <button
+        onClick={() => router.push('/signup/planform')}
         className={styles.submit}
         type="submit"
       >

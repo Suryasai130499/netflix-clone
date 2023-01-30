@@ -2,3 +2,13 @@ export const SET_USER = 'SET_USER';
 export const SET_PASSWORD = 'SET_PASSWORD';
 export const SET_STEP = 'SET_STEP';
 export const SET_PLAN = 'SET_PLAN';
+
+export const SET_BANNER = 'SET_BANNER';
+export const SET_TRENDING = 'SET_TRENDING';
+export const SET_TOP_RATED = 'SET_TOP_RATED';
+export const SET_NETFLIX_ORIGINALS = 'SET_NETFLIX_ORIGINALS';
+export const SET_ACTION_MOVIES = 'SET_ACTION_MOVIES';
+export const SET_COMEDY_MOVIES = 'SET_COMEDY_MOVIES';
+export const SET_HORROR_MOVIES = 'SET_HORROR_MOVIES';
+export const SET_ROMANCE_MOVIES = 'SET_ROMANCE_MOVIES';
+export const SET_DOCUMENTARIES = 'SET_DOCUMENTARIES';

@@ -1,17 +1,18 @@
 'use client';
 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './page.module.css';
 import Plan from './plan';
 import { setPlan } from '@/redux/actions/planActions';
 import { useAppSelector } from '@/redux/hooks';
 import { useAppDispatch } from '@/redux/hooks';
-import Link from 'next/link';
 
 const PlanForm = () => {
   const plan = useAppSelector((state) => state.plan.plan);
   const dispatch = useAppDispatch();
+  const router = useRouter();
 
   const keys = [
     'Monthly Price',
@@ -115,7 +116,12 @@ const PlanForm = () => {
         devices at the same time with Premium, 2 with Standard, and 1 with Basic
         and Mobile.
       </p>
-      <div className={styles.nextButton}>Next</div>
+      <button
+        onClick={() => router.push('/browse')}
+        className={styles.nextButton}
+      >
+        Next
+      </button>
     </div>
   );
 };
