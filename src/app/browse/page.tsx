@@ -18,7 +18,7 @@ const getBanner = async () => {
   }
 };
 
-const Home = () => {
+const HomePage = () => {
   const dispatch = useAppDispatch();
   const data = use(getBanner());
 
@@ -37,4 +37,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

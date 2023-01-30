@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import instance from '../axios';
-import Requests from '../requests';
+import instance from './utils/axios';
+import Requests from './utils/requests';
 
 export default async function handler(
   req: NextApiRequest,
