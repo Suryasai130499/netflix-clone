@@ -1,0 +1,82 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100vw;
+  background-color: transparent;
+  color: rgba(255, 255, 255);
+  transition: background-color 0.3s linear;
+  z-index: 10;
+}
+
+.header.darken {
+  background-color: #000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  position: relative;
+  width: 80px;
+  height: 30px;
+}
+
+.link {
+  font-size: 10px;
+  color: #b3b3b3;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.link.active {
+  color: #fff;
+  cursor: default;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.searchIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.dropDownButton {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.arrow {
+  position: relative;
+  top: 2px;
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+}

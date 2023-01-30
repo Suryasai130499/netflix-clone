@@ -1,5 +1,6 @@
 'use client';
 
+import Header from '@/components/HomePage/Header';
 import styles from './page.module.css';
 import { use } from 'react';
 import { useAppDispatch } from '@/redux/hooks';
@@ -32,6 +33,7 @@ const HomePage = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Header />
       <Banner />
     </div>
   );

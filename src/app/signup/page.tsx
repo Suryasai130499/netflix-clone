@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 import styles from './page.module.css';
@@ -45,13 +46,13 @@ const Registration = () => {
           </div>
         ))}
       </div>
-      <button
-        onClick={() => router.push('/signup/planform')}
+      <Link
+        href={'/signup/planform'}
         className={styles.submit}
         type="submit"
       >
         Next
-      </button>
+      </Link>
     </div>
   );
 };
