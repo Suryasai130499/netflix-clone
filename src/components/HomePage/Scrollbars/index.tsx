@@ -1,5 +1,5 @@
-const Scrollbar = (props) => {
-  return <></>;
+const Scrollbar = () => {
+  return <>Scroll</>;
 };
 
 export default Scrollbar;
