@@ -10,7 +10,7 @@ import Banner from '../../components/HomePage/Banner';
 import Slider from '@/components/Slider';
 
 const getBanner = async () => {
-  const response = await fetch(`http://localhost:3000/api/banner`, {
+  const response = await fetch(`${process.env.URL}/api/banner`, {
     cache: 'no-store',
   }).then((r) => r.json());
   if (response.success) {
