@@ -5,3 +5,7 @@ export function truncateString(str: string, num: number) {
     return str;
   }
 }
+
+export function shuffle(array: any[]) {
+  return array.sort(() => Math.random() - 0.5);
+}

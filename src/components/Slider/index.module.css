@@ -1,0 +1,45 @@
+.scroller {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.slider {
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.card {
+  --width: 150px;
+
+  display: block;
+  position: relative;
+  width: var(--width);
+  aspect-ratio: 11 / 16;
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 5px;
+}
+
+.card.large {
+  --width: 300px;
+  aspect-ratio: 16 / 9;
+}
+
+.front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
